@@ -1,0 +1,22 @@
+<head>
+  <title>pptest</title>
+</head>
+
+<body>
+  {{> ec_button}}
+
+  {{> response}}
+</body>
+
+<template name="ec_button">
+	<a href="{{redirect_url}}" id='submitBtn'>
+		<img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;">
+	</a>
+</template>
+
+<template name="response">
+	<div class="container">
+		{{{data}}}
+	</div>
+	<div class="entry"></div>
+</template>
